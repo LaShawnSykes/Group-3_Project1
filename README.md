@@ -246,3 +246,25 @@ On the day of your presentation, each member of your group is required to submit
 
 NOTE
 Projects are requirements for graduation. While you are allowed to miss up to two Challenge assignments and still earn your certificate, projects cannot be skipped.
+
+# Lewis 
+Environment Setup and Installation
+import pandas as pd
+import numpy as np
+from scipy.stats import ttest_ind, chi2_contingency, f_oneway
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+#Load data
+data = pd.read_excel(‘clean_summary_data_Mean_charts.xlsx’)
+
+This portion of our project aims to provide a deeper statistical analysis of diabetes-related data, focusing on comparing physiological markers and lifestyle factors between Type 1 (T1DM) and Type 2 Diabetes (T2DM). Our code uses T-tests, Chi-square tests, and ANOVA to explore differences in BMI, the occurrence of hypoglycemia, and creatinine levels among diabetic patients. This analysis helps in understanding how different types of diabetes affect patient health and can guide personalized diabetes management strategies.
+
+Statistical Methods Used
+T-Test: Used to compare the means of BMI between two types of diabetes.
+Chi-Square Test: Used to assess the association between the type of diabetes and the incidence of hypoglycemia.
+ANOVA: Used to compare creatinine levels across different diabetes types to evaluate kidney function.
+
+Results
+The script will output the statistical results directly to the console, including T-statistics, p-values for the T-tests, Chi-statistic and p-value for the Chi-square test, and F-statistic and p-value for the ANOVA.
+
