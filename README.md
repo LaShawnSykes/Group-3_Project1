@@ -2,7 +2,7 @@
 
 ## Visual Representation
 
-![Visualization](C:\Users\19727\AI\SMU-VIRT-AI-PT-02-2024-U-LOLC\Group-3_Project1\Document\README_image.png)
+![Visualization]([C:\Users\19727\AI\SMU-VIRT-AI-PT-02-2024-U-LOLC\Group-3_Project1\Document\README_image.png](https://github.com/LaShawnSykes/Group-3_Project1/blob/main/README_image.png))
 
 The ShanghaiT1DM and ShanghaiT2DM Datasets, publicly available resources focusing on diabetes management, underscore the increasing role of data in healthcare research [1]. Their usage, as exemplified by research leveraging data mining techniques for diabetes prediction in Nigeria, highlights the precision and potential of modern data analytics in understanding complex health conditions [2]. With the advancement in data correlation and visual insights, we aim to further this exploration by incorporating various visualization techniques, including scatter plots, heat maps, and box plots, to extract deeper understanding from these datasets. These visualization results using data correlation not only showcase the capabilities of tools like Python, Matplotlib, and Seaborn but also emphasize the relevance of data visualization correlation in extracting meaningful patterns crucial for diabetes management [2][3][5].
 
