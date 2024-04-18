@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[5]:
 
 
 # Importing necessary libraries
@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from IPython.display import display
 
 
-# In[126]:
+# In[6]:
 
 
 clean_data = pd.read_excel('csdm.xlsx')
@@ -20,20 +20,20 @@ type1 = pd.read_excel('../Datasets/Shanghai_T1DM_Summary.xlsx')
 type2 = pd.read_excel('../Datasets/Shanghai_T2DM_Summary.xlsx')
 
 
-# In[127]:
+# In[7]:
 
 
 # Load the dataset
 cd1 = clean_data
 
 
-# In[128]:
+# In[8]:
 
 
 cd1 
 
 
-# In[129]:
+# In[9]:
 
 
 # Displaying the columns of cd1
@@ -42,19 +42,19 @@ print(cd1.columns)
 
 
 
-# In[14]:
+# In[10]:
 
 
 cd1.iloc[:, 7]
 
 
-# In[130]:
+# In[11]:
 
 
 print(cd1.dtypes)
 
 
-# In[156]:
+# In[12]:
 
 
 #Looking for coorelations between different columns. 
@@ -70,7 +70,7 @@ plt.show()
 #Seems to be a average of 5mmol/L of Cholesterol in Diabetic Patients
 
 
-# In[132]:
+# In[13]:
 
 
 # Define mapping of merged categories to new labels for Microvascular Complications
@@ -92,7 +92,7 @@ cd1['Microvascular Complications'] = cd1['Diabetic Microvascular Complications']
 print(cd1['Microvascular Complications'].unique())
 
 
-# In[142]:
+# In[14]:
 
 
 # Define a function to merge and relabel the categories
@@ -109,7 +109,7 @@ cd1['Microvascular Complications'] = cd1['Microvascular Complications'].apply(me
 print(cd1['Microvascular Complications'].unique())
 
 
-# In[143]:
+# In[15]:
 
 
 # Body Mass Index (BMI) Category: A new feature based on BMI ranges.
@@ -127,13 +127,13 @@ def categorize_bmi(bmi):
 cd1['BMI Category'] = cd1['BMI (kg/m2)'].apply(categorize_bmi)
 
 
-# In[103]:
+# In[16]:
 
 
 #cd1['BMI Category'] = cd1['BMI Category'].apply(['Underweight', 'Normal Weight', 'Overweight', 'Obese'])
 
 
-# In[144]:
+# In[17]:
 
 
 #Total Daily Insulin Dose: Utilizing data on both fasting and postprandial insulin levels, we can calculate the total daily insulin dose:
@@ -144,7 +144,7 @@ cd1['Merge 2-hour Postprandial insulin (pmol/L)'] = pd.to_numeric(cd1['Merge 2-h
 cd1['Total Daily Insulin Dose (pmol/L)'] = (cd1['Fasting Insulin (pmol/L)'] + cd1['Merge 2-hour Postprandial insulin (pmol/L)']) * 24
 
 
-# In[145]:
+# In[18]:
 
 
 # Separating data for male and female patients
@@ -152,7 +152,7 @@ male_data = cd1[cd1['Gender (Female=1, Male=2)'] == 2]
 female_data = cd1[cd1['Gender (Female=1, Male=2)'] == 1]
 
 
-# In[146]:
+# In[19]:
 
 
 # Calculating mean BMI for male and female patients to show functional use of gendered data.
@@ -163,7 +163,7 @@ print("Mean BMI for male patients:", mean_bmi_male)
 print("Mean BMI for female patients:", mean_bmi_female)
 
 
-# In[147]:
+# In[20]:
 
 
 # Define the desired order of categories
@@ -173,7 +173,7 @@ desired_order = ['Underweight', 'Normal Weight', 'Overweight', 'Obese']
 cd1['BMI Category'] = pd.Categorical(cd1['BMI Category'], categories=desired_order, ordered=True)
 
 
-# In[148]:
+# In[21]:
 
 
 # Plotting BMI distribution
@@ -188,7 +188,7 @@ plt.savefig('bmidist.png')
 plt.show()
 
 
-# In[155]:
+# In[22]:
 
 
 # Plotting BMI distribution for male and female patients
@@ -212,7 +212,7 @@ plt.savefig('bmidistgender.png')
 plt.show()
 
 
-# In[139]:
+# In[23]:
 
 
 # Sort the data by 'Hypoglycemia (yes/no)'
@@ -220,7 +220,7 @@ cd1_sorted = cd1.sort_values(by='Hypoglycemia (yes/no)')
 cd1_sorted['Hypoglycemia (yes/no)'] = cd1_sorted['Hypoglycemia (yes/no)'].replace({'yes': 'Yes', 'no': 'No'})
 
 
-# In[140]:
+# In[24]:
 
 
 # Visualization 2: Bar Chart of Hypoglycemia Incidence
@@ -233,13 +233,13 @@ plt.savefig('hypoglycemia.png')
 plt.show()
 
 
-# In[141]:
+# In[25]:
 
 
 cd1['Diabetic Microvascular Complications'].unique()
 
 
-# In[83]:
+# In[26]:
 
 
 mapping = {
@@ -260,7 +260,7 @@ cd1['Remapped Microvascular Complications'] = cd1['Diabetic Microvascular Compli
 print(cd1['Remapped Microvascular Complications'].unique())
 
 
-# In[88]:
+# In[37]:
 
 
 # Define a function to merge and relabel the categories
@@ -277,6 +277,7 @@ plt.figure(figsize=(15, 10))
 sns.boxplot(x='Microvascular Complications', y='Fasting Plasma Glucose (mg/dl)', data=cd1)
 plt.title('Box Plot of Fasting Plasma Glucose by Presence of Microvascular Complications')
 plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
 plt.savefig('boxplotfastingplasma.png')
 plt.show()
 
@@ -284,7 +285,7 @@ plt.show()
 # and not far enough to be measured in a seperate quartile. Even though it still contains a single outlier on the high end.
 
 
-# In[93]:
+# In[28]:
 
 
 # Visualization 4: Line Plot of HbA1c Levels Over Time
@@ -302,7 +303,7 @@ plt.show()
 #  If we would rather not then we can use 'errorbar=None' and it will remove the light blue shading 
 
 
-# In[94]:
+# In[29]:
 
 
 # how to get the labels under BMI
@@ -315,7 +316,7 @@ print(unique_labels)
 cd1['Diabetic Macrovascular  Complications'].value_counts()
 
 
-# In[95]:
+# In[30]:
 
 
 # Create a sample DataFrame with the given unique labels
@@ -342,7 +343,7 @@ replacement_mapping = {'peripheral arterial disease, cerebrovascular disease': '
 cd1['Diabetic Macrovascular Complications'] = cd1['Diabetic Macrovascular  Complications'].replace(replacement_mapping)
 
 
-# In[96]:
+# In[31]:
 
 
 # Define a function to merge and relabel the categories
@@ -359,7 +360,7 @@ cd1['Merged Macrovascular Complications'] = cd1['Diabetic Macrovascular Complica
 print(cd1['Merged Macrovascular Complications'].unique())
 
 
-# In[97]:
+# In[32]:
 
 
 #Correlation Between BMI and Diabetic Macrovascular Complications: 
@@ -368,10 +369,11 @@ cd1.groupby('Merged Macrovascular Complications')['BMI (kg/m2)'].mean().plot(kin
 plt.xlabel('Macrovascular Complications')
 plt.xticks(rotation=45, ha='right')
 plt.ylabel('Body Mass Index (kg/m2)')
+plt.tight_layout()
 plt.savefig('bmidmc.png')
 
 
-# In[99]:
+# In[33]:
 
 
 # Visualization 5: Histogram of Age Distribution by Microvascular Complications
@@ -386,7 +388,7 @@ plt.show()
 # while the majority of patients 55-70 had most if not all of the issues associated with Microvascular Complications
 
 
-# In[110]:
+# In[34]:
 
 
 # Visualization 6: Heatmap of Correlation Matrix
@@ -410,14 +412,14 @@ plt.show()
 # 
 
 
-# In[118]:
+# In[35]:
 
 
 # Convert numeric values in 'Gender (Female=1, Male=2)' column to meaningful labels
 cd1['Gender (Female=1, Male=2)'] = cd1['Gender (Female=1, Male=2)'].map({1: 'Female', 2: 'Male'})
 
 
-# In[124]:
+# In[36]:
 
 
 # Visualization 8: Stacked Bar Chart of Diabetic Macrovascular Complications by Gender and HbA1c Levels
