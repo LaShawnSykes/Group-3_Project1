@@ -1,270 +1,135 @@
-# Group-3_Project1
-Team Project on Diabetes 
-For Project 1, you will work with your group to find and analyze a dataset of your choice.
+# Unveiling Visualization Results Using Data Correlation in ShanghaiT1DM and ShanghaiT2DM Datasets
 
-For this project, you can focus your efforts within a specific industry, as detailed in the following examples.
+## Visual Representation
 
-Finance
-Exploratory data analysis is used by many individuals within the finance industry, including investment banking professionals, private equity analysts, lending analysts, financial administrators, and real estate professionals.
+![Visualization](C:\Users\19727\AI\SMU-VIRT-AI-PT-02-2024-U-LOLC\Group-3_Project1\Document\README_image.png)
 
-Exploratory data analysis is used for the following tasks in the financial sector:
+The ShanghaiT1DM and ShanghaiT2DM Datasets, publicly available resources focusing on diabetes management, underscore the increasing role of data in healthcare research [1]. Their usage, as exemplified by research leveraging data mining techniques for diabetes prediction in Nigeria, highlights the precision and potential of modern data analytics in understanding complex health conditions [2]. With the advancement in data correlation and visual insights, we aim to further this exploration by incorporating various visualization techniques, including scatter plots, heat maps, and box plots, to extract deeper understanding from these datasets. These visualization results using data correlation not only showcase the capabilities of tools like Python, Matplotlib, and Seaborn but also emphasize the relevance of data visualization correlation in extracting meaningful patterns crucial for diabetes management [2][3][5].
 
-Identifying deals;
+This article will span discussions from the basic overview of the datasets to the application of data visualization techniques like correlation coefficient visualization and graph showing correlation. By delving into the significance of these datasets for research and education and unraveling the insights through correlation analysis, we present an integrated view supported by visual evidence such as scatter plot and box plot representations [1][2][3]. Central to our discourse will be the application of data correlation using Python and Seaborn, demonstrating through visualizations—including heat maps and correlation coefficient graphs—the intricate relationships inherent in the data, crucial for advancing diabetes care [3][5]. Through this journey, we underscore the power of data visualization in rendering complex data into actionable insights, pivotal for both researchers and practitioners in the field.
 
-Analyzing private equity markets;
+## Overview of ShanghaiT1DM and ShanghaiT2DM Datasets
 
-Researching arbitrage opportunities;
+The ShanghaiT1DM and ShanghaiT2DM datasets, pivotal for diabetes research, are publicly accessible and specifically designed to foster advancements in diabetes management technologies and data-driven models [8][10][12]. Originating from Shanghai, China, these datasets provide a comprehensive view of diabetes through real-life data from patients diagnosed with Type 1 and Type 2 diabetes mellitus [8][10][12].
 
-Evaluating liquidity; and
+### Dataset Composition and Details
 
-Keeping up to date with finance and refinance trends.
+- **Patient Data:** The ShanghaiT1DM dataset includes data from 12 patients with Type 1 diabetes mellitus, while the ShanghaiT2DM dataset encompasses data from 100 patients with Type 2 diabetes mellitus [8].
+- **Data Duration and Type:** Continuous glucose monitoring (CGM) data ranges from 3 to 14 days. Additionally, each dataset contains detailed daily dietary information, including self-reported time and weighed food intake [11].
+- **Additional Medical Information:** Both datasets comprehensively cover clinical characteristics, laboratory measurements, medications, and the use of insulin and non-insulin hypoglycemic agents [11].
 
-Project Examples
-Equity Trading: While working for a large equity-trading company, you’re tasked with researching a client’s portfolio. Your client wants to invest in telecom stocks and needs expert analysis to make the right decision. Using Nasdaq DataLinks to an external site., pull a year’s worth of trading data for the major US mobile network providers: AT&T, T-Mobile, and Verizon. Which stocks are trending upward? Which are trending downward? Based on the data, what would you recommend to your client?
+### Significance in Research and Development
 
-New Car Loan Analysis: People have been financing higher car values over longer amounts of time. Explore what is driving this trend. Search for answers by using data collected from the Federal Reserve Economic Data (FRED)Links to an external site.. What other questions can you answer with the data? What do your results suggest about the time value of money? What about the impact of these loans as time goes on?
+- **First of Its Kind:** These datasets are the first of their kind to be publicly available for T1DM and T2DM patients in China, providing unique insights into the diabetic conditions prevalent in the region [9].
+- **Research Utilization:** They are instrumental in developing algorithms and models tailored for improved diabetes monitoring and management, reflecting their substantial utility in clinical and biomedical research [10][12].
+- **Updates and Accessibility:** Authored by Qinpei Zhao and colleagues, the datasets are meticulously updated, with the latest update logged on January 4, 2023. They are hosted with a DOI link for easy access and reference in scholarly and clinical studies [11].
 
-Healthcare
-Exploratory data analysis is used by many individuals within the healthcare field, including clinical data analysts, pharmaceutical testers, healthcare-economics researchers, senior policy analysts, compliance operations analysts, and public health informatics scientists.
+This detailed overview underscores the datasets' comprehensive nature and their potential to significantly impact diabetes research globally.
 
-Exploratory data analysis is important for understanding the following healthcare considerations:
+## Significance of Diabetes Data for Research
 
-Predicting and diagnosing illnesses;
+The ShanghaiT1DM and ShanghaiT2DM datasets offer significant opportunities for advancing diabetes research through the development of data-driven models and monitoring technologies. These datasets are instrumental in enhancing the predictive capabilities of medical interventions, particularly in the prevention of hypo/hyperglycemic events. By utilizing historical continuous glucose monitoring (CGM) data alongside sophisticated time-series models, researchers can generate alerts for potential hypo/hyperglycemic events before they occur, thus significantly improving patient outcomes [8][9].
 
-Improving patient safety;
+### Real-World Data and Evidence
 
-Reducing time to diagnosis;
+The importance of Real-World Data (RWD) and Real-World Evidence (RWE) in diabetes research cannot be overstated. RWD encompasses a wide range of health and non-health related data, which, when analyzed, provides insights that can lead to improved comparative effectiveness research and advancements in precision medicine. These data sources are crucial for understanding the broader implications of diabetes treatments in diverse populations and settings outside of controlled clinical trials [14].
 
-Increasing our understanding of disease risks and causes; and
+### Challenges in Using EHRs
 
-Developing stronger prevention strategies.
+Electronic Health Records (EHRs) are vital for continuous, efficient, and quality integrated healthcare as they are repositories of extensive digital patient data. EHRs support diabetes research by providing comprehensive data that can lead to meaningful research outputs. However, the use of such extensive datasets comes with its own set of challenges, including legal, ethical, and technological considerations that must be navigated carefully to protect patient privacy and ensure data integrity [13].
 
-Project Examples
-Mental Health in Tech: People working in tech are often at their desks for extended periods. Explore how this trend correlates with mental health. Examine the data collected through surveysLinks to an external site. and search for trends. Find out if there is a link between mental health and companies that offer wellness programs. What do the results show you about the state of mental health in tech? Can you suggest steps that companies can take to help their employees?
+## Using ShanghaiT1DM and ShanghaiT2DM in Educational Settings
 
-Personal Fitness Analyst: Research whether working out helps a person become more active overall. Use data collected by the Samsung Health applicationLinks to an external site. to uncover relevant trends. What do the results tell you about individuals using this app? Have their lifestyles become more active? Less? Remained the same?
+Incorporating the ShanghaiT1DM and ShanghaiT2DM datasets into educational settings serves as a pivotal resource for enhancing learning outcomes in data science and health informatics courses. By integrating these datasets into curriculum frameworks, educators can provide students with hands-on experience in managing real-world data, fostering a deeper understanding of the complexities involved in diabetes management.
 
-Custom
-We’ve only specified healthcare and finance, but any industry can benefit from exploratory data analysis.
+### Practical Applications in Coursework
 
-The following professionals also use data and can benefit from exploratory data analysis:
+- **Case Studies:** Students can engage in case studies where they analyze patient data to identify trends and potential risk factors associated with diabetes. This practical application helps in understanding the real-world implications of data analysis in healthcare [8].
+- **Project-Based Learning:** Assignments could include developing predictive models or conducting statistical analyses to predict diabetes complications using the datasets. Such projects not only enhance technical skills but also improve students' problem-solving abilities [10].
+- **Collaborative Research:** Encouraging students to use these datasets for their thesis or group projects can lead to innovative diabetes research proposals, fostering collaboration and critical thinking [12].
 
-Natural and environmental scientists;
+### Integration of Visualization Techniques
 
-Marketing professionals;
+The datasets also allow for the application of complex visualization techniques which are crucial for data-driven decision-making in healthcare. By using tools like Python and Seaborn, educators can demonstrate how to effectively communicate complex data through:
 
-Information security analysts; and
+- **Scatter Plots and Box Plots:** Visualizing relationships between different variables such as HbA1c levels and microvascular complications [3].
+- **Heat Maps:** Showing correlation matrices that help in understanding the interdependencies among various clinical parameters [5].
 
-Business intelligence analysts.
+These visualization techniques not only enhance the learning experience but also equip students with the skills needed to handle sophisticated data analyses in their future careers. The inclusion of such practical data manipulation exercises helps bridge the gap between theoretical knowledge and real-world application, making the educational process more comprehensive and impactful.
 
-Project Examples
-Private Investigator: Use aggregate crime dataLinks to an external site. from different police precincts in a city to uncover criminal activity patterns. Consider that most crime in New York City takes place in the summerLinks to an external site.. Find out if you are able to uncover similar patterns in your city. What do your results suggest about how police should plan their patrols? What do your results suggest about how law enforcement resources should be distributed over the calendar year?
+# Correlation Insights from the Datasets
 
-Uber Rides and Weather: No one likes to walk in sub-zero temperatures or scorching heat. Do people use Uber more when the weather is extreme? Using Uber ride data from KaggleLinks to an external site. and climate data from the National Centers for Environmental InformationLinks to an external site., find out if people take Uber more during summer and winter months, and if there are relationships between daily temperature and ride frequency. What do the results tell you about surge-pricing strategies and commuter habits?
+## Understanding Correlation Coefficients
 
-Working with Your Group
-When working on an online group project, it’s crucial to meet with your group and communicate regularly. Plan for significant collaboration time outside of class. The following tips can help you make the most of your time:
+**Coefficient Values and Interpretations:** Correlation coefficients, ranging from -1 to +1, provide a quantitative measure of the relationship between variables. A positive value indicates a direct relationship where variables increase together, while a negative value suggests an inverse relationship where one variable increases as the other decreases [19].
 
-Decide how you’re going to communicate with your group members when you begin. Create a Slack channel, exchange phone numbers, and ensure that the group knows each group member’s available working hours.
+**Application in Diabetes Research:** In the context of the ShanghaiT1DM and ShanghaiT2DM datasets, these coefficients are crucial for identifying patterns such as the relationship between glucose levels and dietary intake, aiding in better diabetes management strategies [19].
 
-Set up an agile project by using GitHub ProjectsLinks to an external site. so that your group can track tasks.
+## Auto-Correlation in Diabetes Time-Series Data
 
-Create internal milestones to ensure that your group is on track. Set due dates for these milestones so that you have a timeline for completing the project. Some of these milestones might include:
+**Similarity Between Datasets:** The auto-correlation coefficients of the ShanghaiT1DM and OhioT1DM datasets reveal similar trends and periodic patterns, suggesting the feasibility of merging these datasets for comprehensive studies [9].
 
-Project ideation;
+**Importance of Auto-Correlation:** Auto-correlation helps in understanding the stability and predictability of glucose levels over time, which is vital for developing effective treatment plans for diabetes patients [10].
 
-Data fetching;
+## Practical Applications of Correlation Analysis
 
-Data exploration;
+**Decision Making in Healthcare:** Correlation analysis is employed to optimize healthcare decisions, such as adjusting medication doses based on predictive insights from data correlations [17].
 
-Data transformation;
+**Tools for Analysis:** Python libraries like NumPy and Pandas offer functions such as corrcoef() and corr(), which are used extensively to compute correlations in research and real-world applications, enhancing the accuracy of diabetes predictions and management [18].
 
-Data analysis;
+## Challenges and Considerations
 
-Testing;
+**Data Quality and Privacy**
 
-Creating documentation; and
+**Data Quality:** Managing data quality is a fundamental challenge in diabetes research. Issues such as missing data points and inconsistencies must be addressed through rigorous data preprocessing techniques. This includes data cleaning to remove inaccuracies, normalization to standardize data ranges, and feature selection to identify the most relevant variables for analysis [20].
 
-Creating the presentation.
+**Data Privacy:** Ensuring the privacy of patient data in diabetes datasets like ShanghaiT1DM and ShanghaiT2DM is crucial. Strict protocols and ethical guidelines must be adhered to in order to protect sensitive information, which can include everything from patient identities to their medical histories [20].
+## Limitations of Existing Datasets
 
-Since this is a two-week project, make sure that you have completed at least half of your project by the end of the first week in order to stay on track.
+# Impact of Dataset Size and Representativeness
 
-Although you will divide the work among the group members, it’s essential to collaborate and communicate while working on different parts of the project. Be sure to check in with your teammates regularly and offer support.
+Our exploration of the ShanghaiT1DM and ShanghaiT2DM diabetes datasets has revealed a critical aspect regarding dataset size and representativeness. The  dataset illustrates the challenges posed by limited dataset scope. While it serves as a useful tool for demonstrating machine learning algorithms, its restricted coverage may not effectively represent the complex and varied nature of real-world diabetes cases [9].
 
-Support and Resources
-Your instructional team will provide support during classes and office hours. You will also have access to learning assistants and tutors to help you with topics as needed. Make sure to take advantage of these resources as you collaborate with your group on this first project.
+# Absence of a Control Dataset and Its Impact
 
-Requirements
-Software Version Control (10 points)
-Repository is created on GitHub (2 points).
+The absence of a control dataset in the context of our research highlights the need for larger, more diverse datasets to improve the robustness and applicability of research findings in practical settings. This limitation emphasizes the necessity for comprehensive and varied data sources to ensure that research findings are both scientifically valid and ethically sound.
 
-Files are frequently committed to the repository (3 points).
 
-Commit messages include an appropriate level of detail (2 points).
+**These considerations are essential for advancing the field of diabetes research and ensuring that findings are both scientifically valid and ethically sound.**
 
-Repository is organized and includes relevant information and project files (3 points).
+## Conclusion
 
-Documentation (10 points)
-Code is well commented with concise, relevant notes (3 points).
-
-GitHub README file includes a concise project overview (2 points).
-
-GitHub README file includes detailed usage and installation instructions (2 points).
-
-GitHub README includes either examples of the application, or the results and a summary of the analysis (3 points).
-
-Analysis and Conclusion (30 points)
-Findings are strongly supported with numbers and visualizations (10 points).
-
-Write-up summarizes major findings and implications at a professional level (10 points).
-
-Each question in the project proposal is answered with precise descriptions and findings (5 points).
-
-Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis (5 points).
-
-Visualizations (20 points)
-6–8 visualizations of data (at least two per question) (10 points).
-
-Clear and accurate labeling of images (5 points).
-
-Visualizations supported with ample and precise explanation (5 points).
-
-Presentation Requirements (30 points)
-Your presentation should cover the following:
-
-An executive summary or overview of the project and project goals (5 points).
-
-An overview of the data collection, cleanup, and exploration processes (5 points).
-
-The approach that your group took in achieving the project goals (5 points).
-
-Any additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).
-
-The results and conclusions of the application or analysis (5 points).
-
-Slides effectively demonstrate the project (3 points).
-
-Slides are visually clean and professional (2 points).
-
-This project will be evaluated against the requirements and assigned a grade according to the following table:
-
-Grade	Points
-A (+/-)	90+
-B (+/-)	80–89
-C (+/-)	70–79
-D (+/-)	60–69
-F (+/-)	< 60
-Project Guidelines
-The following project guidelines focus on teamwork, your project proposal, data sources, and data cleanup and analysis.
-
-Collaborating with Your Team
-Remember that these projects are a group effort. The experience of close collaboration will create better project outcomes and help you in your future careers. Specifically, you’ll learn collaborative workflows that will enable you to approach and solve complex problems. Working in groups allows you to work smart and dream big. Take advantage!
-
-Project Proposal
-Before you start writing any code, your group should outline the scope and purpose of your project. This will help provide direction and safeguard against scope creep (the tendency for projects to become more complex after work begins).
-
-The proposal is essentially a brief summary of your interests and intent. Be sure to include the following details:
-
-The kind of data you’d like to work with and the field you’re interested in (finance, healthcare surveys, etc.);
-
-The questions you’ll ask of the data; and
-
-Possible source for the data.
-
-Use the following example for guidance:
-
-The aim of our project is to uncover patterns in credit card fraud. We’ll examine relationships between transaction types and location, purchase prices and times of day, purchase trends over the course of a year, and other related relationships derived from the data.
-
-Finding Data
-Once your group has written a proposal, it’s time to start searching for data. We recommend the following curated sources of high-quality data:
-
-data.worldLinks to an external site.
-
-KaggleLinks to an external site.
-
-Data.govLinks to an external site.
-
-Awesome Public DatasetsLinks to an external site.
-
-IMPORTANT
-Whenever you use a dataset or create a new dataset based on other sources (such as existing datasets or information scraped from websites), make sure to use the following guidelines:
-
-Check for copyright protections, and make sure that the way you plan to use this dataset is within the bounds of fair use.
-
-Document how you intend to use this dataset now and in the future. Find any licenses or terms of use associated with the dataset, and review them to confirm that your intended use is in compliance.
-
-Investigate how the dataset was collected. Identify any indicators that the data was obtained from a source that the compilers were not authorized to access.
-
-You’ll likely have to adjust your project plan as you explore the available data. That’s okay! This is all part of the process. Just make sure that everyone in the group is aligned on the project’s goals as you make changes.
-
-Make sure that your datasets are not too large for your personal computer. Big datasets are difficult to manage locally, so consider using data subsets or different datasets altogether.
-
-Data Cleanup and Analysis
-Now that you’ve picked your data, it’s time to tackle development and analysis. This is where the fun starts!
-
-The analysis process can be broken into two broad phases: (1) exploration and cleanup, and (2) analysis.
-
-As you’ve learned, you’ll need to explore, clean, and reformat your data before you can begin answering your research questions. We recommend keeping track of these exploration and cleanup steps in a dedicated Jupyter notebook to stay organized and make it easier to present your work later.
-
-After you’ve cleaned your data and are ready to start crunching numbers, you should track your work in a Jupyter notebook dedicated specifically to analysis. We recommend focusing your analysis on multiple techniques, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time-series analysis. Don’t forget to include plots during both the exploration and analysis phases. Creating plots along the way can reveal insights and interesting trends in the data that you might not notice if you wait until you’re preparing for your presentation. Presentation requirements will be further explained in the next module.
-
-Presentation Guidelines
-This section lists the Project 1 presentation guidelines. Each group will prepare a formal, 10-minute presentation that covers the following points.
-
-An executive summary or overview of the project and project goals:
-
-Explain how the project relates to the industry you selected.
-An overview of the data collection, cleanup, and exploration processes:
-
-Describe the source of your data and why you chose it for your project.
-
-Describe the collection, exploration, and cleanup process.
-
-The approach that your group took to achieve the project goals:
-
-Include any relevant code or demonstrations of the application or analysis.
-
-Discuss any unanticipated insights or problems that arose and how you resolved them.
-
-The results/conclusions of the application or analysis:
-
-Include relevant images or examples to support your work.
-
-If the project goal was not achieved, discuss the issues and how you attempted to resolve them.
-
-Next steps:
-
-Briefly discuss potential next steps for the project.
-It’s crucial that you find time to rehearse before presentation day.
-
-On the day of your presentation, each member of your group is required to submit the URL of your GitHub repository for grading.
-
-Presentation Day
-Your group will have a total of 10 minutes—7 minutes for the presentation followed by a 3-minute question-and-answer session. It’s crucial that you find time to rehearse before presentation day.
-
-On the day of your presentation, each member of your group is required to submit the URL of your GitHub repository for grading.
-
-NOTE
-Projects are requirements for graduation. While you are allowed to miss up to two Challenge assignments and still earn your certificate, projects cannot be skipped.
-
-# Lewis 
-Environment Setup and Installation
-import pandas as pd
-import numpy as np
-from scipy.stats import ttest_ind, chi2_contingency, f_oneway
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-#Load data
-data = pd.read_excel(‘clean_summary_data_Mean_charts.xlsx’)
-
-This portion of our project aims to provide a deeper statistical analysis of diabetes-related data, focusing on comparing physiological markers and lifestyle factors between Type 1 (T1DM) and Type 2 Diabetes (T2DM). Our code uses T-tests, Chi-square tests, and ANOVA to explore differences in BMI, the occurrence of hypoglycemia, and creatinine levels among diabetic patients. This analysis helps in understanding how different types of diabetes affect patient health and can guide personalized diabetes management strategies.
-
-Statistical Methods Used
-T-Test: Used to compare the means of BMI between two types of diabetes.
-Chi-Square Test: Used to assess the association between the type of diabetes and the incidence of hypoglycemia.
-ANOVA: Used to compare creatinine levels across different diabetes types to evaluate kidney function.
-
-Results
-The script will output the statistical results directly to the console, including T-statistics, p-values for the T-tests, Chi-statistic and p-value for the Chi-square test, and F-statistic and p-value for the ANOVA.
-
+Through our exploration of the ShanghaiT1DM and ShanghaiT2DM datasets, we've embarked on a comprehensive journey to understanding the potentials of data visualization and correlation in enhancing diabetes research. The use of various visualization techniques such as scatter plots, heat maps, and box plots has provided us with intricate insights into the relationships between different diabetes-related variables. These correlations, crucial for advancing diabetes care, illustrate the significant benefits of employing advanced data analysis tools in healthcare research. By analyzing these patterns, we've reaffirmed the importance of data-driven decisions in medical sciences, reinforcing the thesis that sophisticated data visualization and correlation techniques are pivotal in extracting meaningful insights for diabetes management.
+
+Reflecting on the broader implications of our findings, it is evident that the integration of data correlation and visual insights into research and educational settings holds profound potential for revolutionizing diabetes care and management. The article's discussions underscore the necessity for further research and the adoption of these methodologies across healthcare disciplines. By leveraging the visual representations and analyses presented, researchers and practitioners can gain a deeper understanding of diabetes complexities, thereby enhancing predictive accuracies and treatment outcomes. It is with this foundation that we advocate for the continued exploration and utilization of such advanced data analysis techniques, ensuring the progression toward more informed and effective diabetes management strategies.
+
+## FAQs
+
+1. What is the most straightforward method for visualizing a correlation between two variables?
+   - The simplest method to visualize a correlation between two variables is by using a scatterplot. This type of plot displays values for two numeric variables as dots on a graph, which helps in identifying any potential relationships between them without the need for calculating a correlation coefficient.
+
+2. How does data storytelling differ from a data dashboard?
+   - Data storytelling involves crafting a narrative around data to present it in a contextual and engaging manner. It employs various techniques to convey the story behind the data. On the other hand, a data dashboard is a tool that displays all relevant data in one place, allowing users to interpret and create their own narratives based on the comprehensive data provided.
+
+## References
+
+[1] - https://www.researchgate.net/publication/367252616_Chinese_diabetes_datasets_for_data-driven_machine_learning
+[2] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6718069/
+[3] - https://www.kaggle.com/code/soheylbokaie/diabetes-data-analysis-insights-and-visualization
+[4] - https://digital.ahrq.gov/sites/default/files/docs/citation/r21hs023865-lee-final-report-2018.pdf
+[5] - https://www.researchgate.net/publication/374612719_Data_Visualization_of_Big_Data_for_Predictive_and_Descriptive_Analytics_for_Stroke_COVID-19_and_Diabetes
+[6] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6746071/
+[7] - https://www.atlantis-press.com/journals/hcis/125965543/view
+[8] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9849330/
+[9] - https://sites.google.com/view/uci-diabetes-datase-davgarl1j
+[10] - https://www.nature.com/articles/s41597-023-01940-7
+[11] - https://figshare.com/collections/Diabetes_Datasets_ShanghaiT1DM_and_ShanghaiT2DM/6310860
+[12] - https://ui.adsabs.harvard.edu/abs/2023NatSD..10...35Z/abstract
+[13] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6176528/
+[14] - https://diabetesjournals.org/care/article/46/7/1316/151548/Use-of-Real-World-Data-in-Population-Science-to
+[15] - https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0918-5
+[16] - https://www.nature.com/articles/s41597-023-02469-5
+[17] - https://www.linkedin.com/pulse/unveiling-insights-correlation-analysis-unleashing-power-bhaskaran-
+[18] - https://medium.com/@JaveriaSaif/correlation-in-data-analytics-75fec1f2147d
+[19] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6375260/
+[20] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10544445/
