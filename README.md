@@ -1,101 +1,101 @@
-# Unveiling Visualization Results Using Data Correlation in ShanghaiT1DM and ShanghaiT2DM Datasets
+# Visual Analysis of Health Factors in Diabetes
 
-## Visual Representation
 
 ![Visualization](C:\Users\19727\AI\SMU-VIRT-AI-PT-02-2024-U-LOLC\Group-3_Project1\Document\README_image.png)
 
-The ShanghaiT1DM and ShanghaiT2DM Datasets, publicly available resources focusing on diabetes management, underscore the increasing role of data in healthcare research [1]. Their usage, as exemplified by research leveraging data mining techniques for diabetes prediction in Nigeria, highlights the precision and potential of modern data analytics in understanding complex health conditions [2]. With the advancement in data correlation and visual insights, we aim to further this exploration by incorporating various visualization techniques, including scatter plots, heat maps, and box plots, to extract deeper understanding from these datasets. These visualization results using data correlation not only showcase the capabilities of tools like Python, Matplotlib, and Seaborn but also emphasize the relevance of data visualization correlation in extracting meaningful patterns crucial for diabetes management [2][3][5].
 
-This article will span discussions from the basic overview of the datasets to the application of data visualization techniques like correlation coefficient visualization and graph showing correlation. By delving into the significance of these datasets for research and education and unraveling the insights through correlation analysis, we present an integrated view supported by visual evidence such as scatter plot and box plot representations [1][2][3]. Central to our discourse will be the application of data correlation using Python and Seaborn, demonstrating through visualizations—including heat maps and correlation coefficient graphs—the intricate relationships inherent in the data, crucial for advancing diabetes care [3][5]. Through this journey, we underscore the power of data visualization in rendering complex data into actionable insights, pivotal for both researchers and practitioners in the field.
+## Introduction
+This study aims to visually analyze the ShanghaiT1DM and ShanghaiT2DM datasets to uncover correlations and insights regarding various health factors in individuals with diabetes.
 
-## Overview of ShanghaiT1DM and ShanghaiT2DM Datasets
+## Key Questions Addressed
+1. **Understanding Health Factors in Diabetes**
+   - How do weight, blood sugar levels, age, cholesterol, and gender interrelate in individuals with diabetes, and how can these correlations inform strategies for maintaining overall health?
 
-The ShanghaiT1DM and ShanghaiT2DM datasets, pivotal for diabetes research, are publicly accessible and specifically designed to foster advancements in diabetes management technologies and data-driven models [8][10][12]. Originating from Shanghai, China, these datasets provide a comprehensive view of diabetes through real-life data from patients diagnosed with Type 1 and Type 2 diabetes mellitus [8][10][12].
+2. **Diabetes-Related Health Connections**
+   - What are the specific connections between blood sugar levels and prevalent diabetes-related complications such as eye, nerve, and kidney problems, and how can these visualized connections guide strategies for mitigating associated risks and promoting well-being?
 
-### Dataset Composition and Details
+3. **Gender, Heart Risks, and Blood Sugar**
+   - Do men and women with diabetes face differing heart risks based on blood sugar levels, and how can visualized correlations aid in developing tailored heart health management strategies for specific gender-related risks in the context of diabetes?
 
-- **Patient Data:** The ShanghaiT1DM dataset includes data from 12 patients with Type 1 diabetes mellitus, while the ShanghaiT2DM dataset encompasses data from 100 patients with Type 2 diabetes mellitus [8].
-- **Data Duration and Type:** Continuous glucose monitoring (CGM) data ranges from 3 to 14 days. Additionally, each dataset contains detailed daily dietary information, including self-reported time and weighed food intake [11].
-- **Additional Medical Information:** Both datasets comprehensively cover clinical characteristics, laboratory measurements, medications, and the use of insulin and non-insulin hypoglycemic agents [11].
+## Research Objectives
+By addressing these questions, the study aims to provide comprehensive visual insights into the interplay of various health factors in individuals with diabetes, with the ultimate goal of contributing to improved diabetes management and overall health outcomes.
 
-### Significance in Research and Development
+**Significance of Research:** This study holds significant promise in enhancing our understanding of the complex interrelationships between health factors in individuals with diabetes. The findings may benefit the healthcare industry in the following ways:
 
-- **First of Its Kind:** These datasets are the first of their kind to be publicly available for T1DM and T2DM patients in China, providing unique insights into the diabetic conditions prevalent in the region [9].
-- **Research Utilization:** They are instrumental in developing algorithms and models tailored for improved diabetes monitoring and management, reflecting their substantial utility in clinical and biomedical research [10][12].
-- **Updates and Accessibility:** Authored by Qinpei Zhao and colleagues, the datasets are meticulously updated, with the latest update logged on January 4, 2023. They are hosted with a DOI link for easy access and reference in scholarly and clinical studies [11].
+1. **Informed Treatment Strategies:** Healthcare professionals can utilize the visualized correlations and insights to develop more informed and personalized treatment strategies for individuals with diabetes, taking into account the interplay of various health factors.
 
-This detailed overview underscores the datasets' comprehensive nature and their potential to significantly impact diabetes research globally.
+2. **Preventive Care and Risk Mitigation:** The identified connections between blood sugar levels and diabetes-related complications can guide healthcare providers in implementing proactive measures for mitigating associated risks and promoting well-being in patients with diabetes.
 
-## Significance of Diabetes Data for Research
+3. **Tailored Health Management:** Visualized correlations regarding gender-specific heart risks based on blood sugar levels can aid in developing tailored heart health management strategies for men and women with diabetes, thus improving the overall care for individuals with this condition.
 
-The ShanghaiT1DM and ShanghaiT2DM datasets offer significant opportunities for advancing diabetes research through the development of data-driven models and monitoring technologies. These datasets are instrumental in enhancing the predictive capabilities of medical interventions, particularly in the prevention of hypo/hyperglycemic events. By utilizing historical continuous glucose monitoring (CGM) data alongside sophisticated time-series models, researchers can generate alerts for potential hypo/hyperglycemic events before they occur, thus significantly improving patient outcomes [8][9].
+4. **Enhanced Patient Education:** The visual insights from this study can contribute to enhanced patient education, empowering individuals with diabetes to better understand the interrelationships between various health factors and make informed decisions about their health and well-being.
 
-### Real-World Data and Evidence
+In summary, the findings of this study have the potential to significantly enhance the quality of care and management of diabetes within the healthcare industry, ultimately leading to improved health outcomes for individuals with diabetes.
 
-The importance of Real-World Data (RWD) and Real-World Evidence (RWE) in diabetes research cannot be overstated. RWD encompasses a wide range of health and non-health related data, which, when analyzed, provides insights that can lead to improved comparative effectiveness research and advancements in precision medicine. These data sources are crucial for understanding the broader implications of diabetes treatments in diverse populations and settings outside of controlled clinical trials [14].
-
-### Challenges in Using EHRs
-
-Electronic Health Records (EHRs) are vital for continuous, efficient, and quality integrated healthcare as they are repositories of extensive digital patient data. EHRs support diabetes research by providing comprehensive data that can lead to meaningful research outputs. However, the use of such extensive datasets comes with its own set of challenges, including legal, ethical, and technological considerations that must be navigated carefully to protect patient privacy and ensure data integrity [13].
-
-## Using ShanghaiT1DM and ShanghaiT2DM in Educational Settings
-
-Incorporating the ShanghaiT1DM and ShanghaiT2DM datasets into educational settings serves as a pivotal resource for enhancing learning outcomes in data science and health informatics courses. By integrating these datasets into curriculum frameworks, educators can provide students with hands-on experience in managing real-world data, fostering a deeper understanding of the complexities involved in diabetes management.
-
-### Practical Applications in Coursework
-
-- **Case Studies:** Students can engage in case studies where they analyze patient data to identify trends and potential risk factors associated with diabetes. This practical application helps in understanding the real-world implications of data analysis in healthcare [8].
-- **Project-Based Learning:** Assignments could include developing predictive models or conducting statistical analyses to predict diabetes complications using the datasets. Such projects not only enhance technical skills but also improve students' problem-solving abilities [10].
-- **Collaborative Research:** Encouraging students to use these datasets for their thesis or group projects can lead to innovative diabetes research proposals, fostering collaboration and critical thinking [12].
 
 ### Integration of Visualization Techniques
 
-The datasets also allow for the application of complex visualization techniques which are crucial for data-driven decision-making in healthcare. By using tools like Python and Seaborn, educators can demonstrate how to effectively communicate complex data through:
+The datasets allow for the application of complex visualization techniques which are crucial for data-driven decision-making in healthcare. By using tools like Python and Seaborn, we can demonstrate how to effectively communicate complex data through: 
 
 - **Scatter Plots and Box Plots:** Visualizing relationships between different variables such as HbA1c levels and microvascular complications [3].
 - **Heat Maps:** Showing correlation matrices that help in understanding the interdependencies among various clinical parameters [5].
 
-These visualization techniques not only enhance the learning experience but also equip students with the skills needed to handle sophisticated data analyses in their future careers. The inclusion of such practical data manipulation exercises helps bridge the gap between theoretical knowledge and real-world application, making the educational process more comprehensive and impactful.
+These visualization techniques not only enhance our research experience but also equip us with the skills needed to handle sophisticated data analyses in our future careers. The inclusion of such practical data manipulation helps bridge the gap between theoretical knowledge and real-world application, making the study process more comprehensive and impactful.
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidist.png)
+The analysis of the sample set revealed that most patients fell within the body mass index range of 18.5 - 25 kg/m², in relation to the second quartile. This range is identified by the Center for Disease Control as representing a healthy or optimal weight status for the general population. 
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidistgender.png)
+It was observed that there was a relatively equal proportion of male and female participants overall. However, a detailed analysis revealed a significant difference of 29.89% between the genders in terms of their representation within the optimal weight range. This finding underscores the significance of considering gender-specific variations in body composition and associated health outcomes.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidmc.png)
+There is an almost even distribution of macrovascular complications across the entirety of this testing. You could infer that BMI may not have much effect on whether or not a diabetic patient will have a greater or less than chance to develop these complications.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/boxplotfastingplasma.png)
+Overall elevated FPG levels are linked to a higher risk of chronic microvascular complications. With a whisker not appearing on top of Neuropathy, Retinopathy, and Nephropathy indicates the max value is closer to the mean and not far enough to be measured in a separate quartile. Even though it still contains a single outlier on the high end. The breakdown of patients had 89 patients with no complications present, 16 with just neuropathy, and 8 who had both neuropathy and retinopathy, and the remainder tapers off from there.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/histogram.png)
+The histogram indicates there is a peak amplitude between age of diabetes diagnosis and the risk of microvascular disease. The data shows that early detection may mitigate the likelihood of complications. Most of the patients in the 50-70s range showed more macrovascular complications due to late diagnosis. Conversely, individuals diagnosed in their late 70s and on, demonstrate that a later in life diagnosis does not equate to an increase in macrovascular complications.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/hypoglycemia.png)
+The bar chart depicting hypoglycemia incidence reveals a relatively low occurrence rate, with only 11.0% of the sampled patients experiencing hypoglycemic episodes. Factors contributing to an elevated risk of hypoglycemia include low BMI, inadequate dietary habits, insufficient physical activity, and the presence of concurrent complications such as microvascular and macrovascular diseases. It is noteworthy that this sample set deviates from most expected trends, potentially influenced by dietary habits or local cultural variations.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/lineplothba1c.png)
+HbA1c is the measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.  Within this study, an observable sine curve pattern emerges in the median HbA1c levels among individuals managing diabetes. Initially, there is a peak followed by a consistent decline over the initial five years, then followed by a gradual rise over the subsequent five-year period. This sine wave continues in regular intervals with diminishing returns. The shading represents the variability of the data around the confidence intervals and  reliability of the estimated trend.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/scatteragecholesterol.png)
+Cholesterol constitutes a significant health factor impacting individuals with diabetes. The widely accepted median value is 200 mg/dL or 5.2 mmol/L. In this study you can see a mean of approximately 4.8 mmol/L across all patients which aligns with the standards of the National Library of Medicine.
+
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/stackedbarchart.png)
+In this data set males were at higher risk of macrovascular complications when their HbA1c levels were at 61-70 and above 100 mmol/mol. The females were more at risk in the 51-60 range. Notably males were more likely than females to develop macrovascular complications.
+These discernible gender discrepancies emphasize the necessity for tailored approaches to diabetes management, acknowledging the distinct risk profiles and outcomes evident between males and females
+
 
 # Correlation Insights from the Datasets
-
-## Understanding Correlation Coefficients
-
-**Coefficient Values and Interpretations:** Correlation coefficients, ranging from -1 to +1, provide a quantitative measure of the relationship between variables. A positive value indicates a direct relationship where variables increase together, while a negative value suggests an inverse relationship where one variable increases as the other decreases [19].
-
-**Application in Diabetes Research:** In the context of the ShanghaiT1DM and ShanghaiT2DM datasets, these coefficients are crucial for identifying patterns such as the relationship between glucose levels and dietary intake, aiding in better diabetes management strategies [19].
-
-## Auto-Correlation in Diabetes Time-Series Data
-
-**Similarity Between Datasets:** The auto-correlation coefficients of the ShanghaiT1DM and OhioT1DM datasets reveal similar trends and periodic patterns, suggesting the feasibility of merging these datasets for comprehensive studies [9].
-
-**Importance of Auto-Correlation:** Auto-correlation helps in understanding the stability and predictability of glucose levels over time, which is vital for developing effective treatment plans for diabetes patients [10].
-
-## Practical Applications of Correlation Analysis
-
-**Decision Making in Healthcare:** Correlation analysis is employed to optimize healthcare decisions, such as adjusting medication doses based on predictive insights from data correlations [17].
-
-**Tools for Analysis:** Python libraries like NumPy and Pandas offer functions such as corrcoef() and corr(), which are used extensively to compute correlations in research and real-world applications, enhancing the accuracy of diabetes predictions and management [18].
+<Insert information about the correlation insights from the all of the visualizations presented >
 
 ## Challenges and Considerations
 
-**Data Quality and Privacy**
-
 **Data Quality:** Managing data quality is a fundamental challenge in diabetes research. Issues such as missing data points and inconsistencies must be addressed through rigorous data preprocessing techniques. This includes data cleaning to remove inaccuracies, normalization to standardize data ranges, and feature selection to identify the most relevant variables for analysis [20].
 
-**Data Privacy:** Ensuring the privacy of patient data in diabetes datasets like ShanghaiT1DM and ShanghaiT2DM is crucial. Strict protocols and ethical guidelines must be adhered to in order to protect sensitive information, which can include everything from patient identities to their medical histories [20].
 ## Limitations of Existing Datasets
 
 # Impact of Dataset Size and Representativeness
 
-Our exploration of the ShanghaiT1DM and ShanghaiT2DM diabetes datasets has revealed a critical aspect regarding dataset size and representativeness. The  dataset illustrates the challenges posed by limited dataset scope. While it serves as a useful tool for demonstrating machine learning algorithms, its restricted coverage may not effectively represent the complex and varied nature of real-world diabetes cases [9].
+Our exploration of the ShanghaiT1DM and ShanghaiT2DM diabetes datasets has revealed a critical aspect regarding dataset size and representativeness. The  dataset illustrates the challenges posed by limited dataset scope. While it serves as a useful tool for data correlation and insight, its restricted coverage may not effectively represent the complex and varied nature of real-world diabetes cases [9].
 
 # Absence of a Control Dataset and Its Impact
 
 The absence of a control dataset in the context of our research highlights the need for larger, more diverse datasets to improve the robustness and applicability of research findings in practical settings. This limitation emphasizes the necessity for comprehensive and varied data sources to ensure that research findings are both scientifically valid and ethically sound.
 
-
-**These considerations are essential for advancing the field of diabetes research and ensuring that findings are both scientifically valid and ethically sound.**
 
 ## Conclusion
 
@@ -133,4 +133,3 @@ Reflecting on the broader implications of our findings, it is evident that the i
 [18] - https://medium.com/@JaveriaSaif/correlation-in-data-analytics-75fec1f2147d
 [19] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6375260/
 [20] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10544445/
-
