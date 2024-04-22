@@ -235,7 +235,7 @@ Therefore, we must persist in advancing the frontiers of data science and medica
 -**Hypoglycemia:** A condition characterized by low blood glucose levels, which can lead to symptoms such as weakness, shakiness, and confusion. It is commonly associated with diabetes treatment involving insulin or certain medications.  
 -**Glycemic Index (GI):** A measure of how quickly a carbohydrate-containing food raises blood glucose levels after consumption compared to a reference food (usually glucose or white bread). Foods with a high GI cause a rapid spike in blood glucose, while those with a low GI produce a more gradual increase.  
 
-## Code availability 
+## Code Availability 
 The code for the analysis of the datasets and visualizations can be accessed in the GitHub repository, which is a JUPYTER notebook located within the code directory. The scripts can be executed with Python 3.6 and allows for reproducibility and code reuse.
 
 ## References
