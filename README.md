@@ -1,248 +1,264 @@
-# Group-3_Project1
-Team Project on Diabetes 
-For Project 1, you will work with your group to find and analyze a dataset of your choice.
+# Visual Analysis of Health Factors in Diabetes
 
-For this project, you can focus your efforts within a specific industry, as detailed in the following examples.
+## Abstract
 
-Finance
-Exploratory data analysis is used by many individuals within the finance industry, including investment banking professionals, private equity analysts, lending analysts, financial administrators, and real estate professionals.
+This study delves into visual analysis of the ShanghaiT1DM and ShanghaiT2DM datasets, aiming to unveil correlations and insights into various health factors among individuals with diabetes. By addressing key questions regarding health factors, diabetes-related complications, and gender-specific risks, the research endeavors to provide comprehensive visual insights crucial for improved diabetes management and overall health outcomes. The datasets, publicly accessible and unique in capturing real-life data from patients diagnosed with Type 1 and Type 2 diabetes mellitus, offer a rich resource for diabetes research. Detailed compositions of the datasets, encompassing clinical characteristics, laboratory measurements, medications, and dietary information, facilitate robust data analysis. Leveraging data visualization techniques, the study not only enhances understanding but also equips professionals with the skills necessary for handling complex data analyses in diabetes management, contributing to better healthcare practices and outcomes.
 
-Exploratory data analysis is used for the following tasks in the financial sector:
+## Project Team
+**Project Manager & Data Engineer & Documentation Lead & README.md Lead: La Shawn Sykes**
 
-Identifying deals;
+-Responsibilities: Leads the project, manages the team, and handles the technical side of collecting, cleaning, and storing data.  Uses advanced techniques to dive deep into data. Also prepares project documents and presentations.  
+-Skills: Good at managing people and projects, research datasets and project information, perform data cleaning and data analysis, knows data processing, create sample python code for visualization, good at explaining technical information in writing, pays attention to detail and knows Markdown.  
+-Quote:"Within the data lies the story of our endeavors, waiting to be deciphered with curiosity, clarity, and conviction."  
 
-Analyzing private equity markets;
+**Visualization Specialist & Data Analyst: Aaron Cranor**
 
-Researching arbitrage opportunities;
+-Responsibilities: Finds patterns in data, makes graphs and charts to show findings.  
+-Skills: Knows statistics and programming, good at making data easy to understand visually, provide data insights.    
+-Quote: "In the symphony of data, visualization is the conductor, orchestrating insights that resonate with clarity and depth.  
 
-Evaluating liquidity; and
+**README.md Support & Team Member: Lewis Hill**
 
-Keeping up to date with finance and refinance trends.
+-Responsibilities: Keeps the README.md file updated with the latest project information.  
+-Skills: Pays attention to detail and knows Markdown, works with others to achieve a goal, communicate, collaborate, and contribute to help the team succeed.  
+-Quote: "Crafting clarity in code, support ensures every document shines bright, guiding the way for all who journey through our digital landscape."  
 
-Project Examples
-Equity Trading: While working for a large equity-trading company, you’re tasked with researching a client’s portfolio. Your client wants to invest in telecom stocks and needs expert analysis to make the right decision. Using Nasdaq DataLinks to an external site., pull a year’s worth of trading data for the major US mobile network providers: AT&T, T-Mobile, and Verizon. Which stocks are trending upward? Which are trending downward? Based on the data, what would you recommend to your client?
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/main/README_image.png)
 
-New Car Loan Analysis: People have been financing higher car values over longer amounts of time. Explore what is driving this trend. Search for answers by using data collected from the Federal Reserve Economic Data (FRED)Links to an external site.. What other questions can you answer with the data? What do your results suggest about the time value of money? What about the impact of these loans as time goes on?
 
-Healthcare
-Exploratory data analysis is used by many individuals within the healthcare field, including clinical data analysts, pharmaceutical testers, healthcare-economics researchers, senior policy analysts, compliance operations analysts, and public health informatics scientists.
+## Project Overview
 
-Exploratory data analysis is important for understanding the following healthcare considerations:
+This study aims to visually analyze the ShanghaiT1DM and ShanghaiT2DM datasets to uncover correlations and insights regarding various health factors in individuals with diabetes. Through visualization and data correlation, the research addresses the following key questions:
 
-Predicting and diagnosing illnesses;
+1. **Understanding Health Factors in Diabetes**
+   - How do weight, blood sugar levels, age, cholesterol, and gender interrelate in individuals with diabetes, and how can these correlations inform strategies for maintaining overall health?
 
-Improving patient safety;
+2. **Diabetes-Related Health Connections**
+   - What are the specific connections between blood sugar levels and prevalent diabetes-related complications such as eye, nerve, and kidney problems, and how can these visualized connections guide strategies for mitigating associated risks and promoting well-being?
 
-Reducing time to diagnosis;
+3. **Gender, Heart Risks, and Blood Sugar**
+   - Do men and women with diabetes face differing heart risks based on blood sugar levels, and how can visualized correlations aid in developing tailored heart health management strategies for specific gender-related risks in the context of diabetes?
 
-Increasing our understanding of disease risks and causes; and
+By addressing these questions, the study provides comprehensive visual insights into the interplay of various health factors in individuals with diabetes, with the  goal of contributing to improved diabetes management and overall health outcomes.
 
-Developing stronger prevention strategies.
+## Overview of ShanghaiT1DM and ShanghaiT2DM Datasets
 
-Project Examples
-Mental Health in Tech: People working in tech are often at their desks for extended periods. Explore how this trend correlates with mental health. Examine the data collected through surveysLinks to an external site. and search for trends. Find out if there is a link between mental health and companies that offer wellness programs. What do the results show you about the state of mental health in tech? Can you suggest steps that companies can take to help their employees?
+The ShanghaiT1DM and ShanghaiT2DM datasets, pivotal for diabetes research, are publicly accessible and specifically designed to foster advancements in diabetes management technologies and data-driven models [8][10][12]. Originating from Shanghai, China, these datasets provide a comprehensive view of diabetes through real-life data from patients diagnosed with Type 1 and Type 2 diabetes mellitus [8][10][12].
 
-Personal Fitness Analyst: Research whether working out helps a person become more active overall. Use data collected by the Samsung Health applicationLinks to an external site. to uncover relevant trends. What do the results tell you about individuals using this app? Have their lifestyles become more active? Less? Remained the same?
+### Dataset Composition and Details
 
-Custom
-We’ve only specified healthcare and finance, but any industry can benefit from exploratory data analysis.
+Dataset composition refers to what's inside a dataset and how it's set up. It includes things like what kind of data is there, how many pieces of information it holds, and any extra details that help make sense of it. Knowing the composition helps researchers and analysts figure out the best ways to work with the data and understand what it can tell us.
 
-The following professionals also use data and can benefit from exploratory data analysis:
+- **First of Its Kind:** These datasets are the first of their kind to be publicly available for T1DM and T2DM patients in China, providing unique insights into the diabetic conditions prevalent in the region [9].
+- **Research Utilization:** They are instrumental in developing algorithms and models tailored for improved diabetes monitoring and management, reflecting their substantial utility in clinical and biomedical research [10][12].
+- **Updates and Accessibility:** Authored by Qinpei Zhao and colleagues, the datasets are meticulously updated, with the latest update logged on January 4, 2023. They are hosted with a DOI link for easy access and reference in scholarly and clinical studies [11].
+- **Patient Data:** The ShanghaiT1DM dataset includes data from 12 patients with Type 1 diabetes mellitus, while the ShanghaiT2DM dataset encompasses data from 100 patients with Type 2 diabetes mellitus [8].
+- **Data Duration and Type:** Continuous glucose monitoring (CGM) data ranges from 3 to 14 days. Additionally, each dataset contains detailed daily dietary information, including self-reported time and weighed food intake [11].
+- **Additional Medical Information:** Both datasets comprehensively cover clinical characteristics, laboratory measurements, medications, and the use of insulin and non-insulin hypoglycemic agents [11].
 
-Natural and environmental scientists;
+## Data Analysis
 
-Marketing professionals;
+Data analysis is the process of examining, cleaning, transforming, and interpreting data to uncover insights, identify patterns, and make informed decisions.
 
-Information security analysts; and
+### Data Collection
 
-Business intelligence analysts.
+The summary sheets summarize the clinical characteristics, laboratory measurements and medications of the patients included in this study, with each row corresponding to one excel table in “Shanghai_T1DM” and “Shanghai_T2DM” folders. Clinical characteristics include patient ID, gender, age, height, weight, BMI, smoking and drinking history, type of diabetes, duration of diabetes, diabetic complications, comorbidities as well as occurrence of hypoglycemia. Laboratory measurements contain fasting and 2-hour postprandial plasma glucose/C-peptide/insulin, hemoglobin A1c (HbA1c), glycated albumin, total cholesterol, triglyceride, high-density lipoprotein cholesterol, low-density lipoprotein cholesterol, creatinine, estimated glomerular filltra-tion rate, uric acid and blood urea nitrogen. Both hypoglycemic agents and medications given for other diseases before the CGM reading were also recorded [1].
 
-Project Examples
-Private Investigator: Use aggregate crime dataLinks to an external site. from different police precincts in a city to uncover criminal activity patterns. Consider that most crime in New York City takes place in the summerLinks to an external site.. Find out if you are able to uncover similar patterns in your city. What do your results suggest about how police should plan their patrols? What do your results suggest about how law enforcement resources should be distributed over the calendar year?
+- **Researching Topics:** Identified potential sources for data collection, including databases, sensors, APIs, or user-generated content.
+- **Dataset Selection:** Chose a dataset aligned with our goals for diabetes education.
+- **Data Storage:** Organized collected data in secure, accessible folders for team use.
 
-Uber Rides and Weather: No one likes to walk in sub-zero temperatures or scorching heat. Do people use Uber more when the weather is extreme? Using Uber ride data from KaggleLinks to an external site. and climate data from the National Centers for Environmental InformationLinks to an external site., find out if people take Uber more during summer and winter months, and if there are relationships between daily temperature and ride frequency. What do the results tell you about surge-pricing strategies and commuter habits?
+### Data Cleanup
+- **Data Review:** Checked data for accuracy, completeness, anomalies, and inconsistencies.
+- **Cleaning Process:** Addressed issues through data cleaning techniques.
+- **Data Validation:** Ensured cleaned data reliability through validation for all team members.
 
-Working with Your Group
-When working on an online group project, it’s crucial to meet with your group and communicate regularly. Plan for significant collaboration time outside of class. The following tips can help you make the most of your time:
+### Data Exploration
+- **Statistical Analysis:** Calculated basic statistics to understand data distribution.
+- **Visualization:** Created visual representations (histograms, box plots, scatter plots, heat maps) to reveal patterns, trends, and outliers.
+- **Preliminary Analysis:** Conducted initial analysis to test assumptions and identify potential relationships in the data.
 
-Decide how you’re going to communicate with your group members when you begin. Create a Slack channel, exchange phone numbers, and ensure that the group knows each group member’s available working hours.
+## Integration of Visualization Techniques
 
-Set up an agile project by using GitHub ProjectsLinks to an external site. so that your group can track tasks.
+From a data analysis perspective, these visualization techniques not only improve understanding but also equip professionals with the skills necessary for handling complex data analyses in their careers. Integrating practical data manipulation exercises helps bridge the gap between theoretical knowledge and real-world application, contributing to more effective diabetes management and overall health outcomes.
 
-Create internal milestones to ensure that your group is on track. Set due dates for these milestones so that you have a timeline for completing the project. Some of these milestones might include:
+---
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidistgender.png)
 
-Project ideation;
+It was observed that there was a relatively equal proportion of male and female participants overall. However, a detailed analysis revealed a significant difference of 29.89% between the genders in terms of their representation within the optimal weight range. This finding underscores the significance of considering gender-specific variations in body composition and associated health outcomes.
 
-Data fetching;
+---
+- **Q2. Can we find any clear connections between blood sugar levels and common diabetes-related issues like eye, nerve, or kidney problems?:**
+  
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidmc.png)
 
-Data exploration;
+There is an almost even distribution of macrovascular complications across the entirety of this testing. You could infer that BMI may not have much effect on whether or not a diabetic patient will have a greater or less than chance to develop these complications.
 
-Data transformation;
+---
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/boxplotfastingplasma.png)
 
-Data analysis;
 
-Testing;
+Overall elevated FPG levels are linked to a higher risk of chronic microvascular complications. With a whisker not appearing on top of Neuropathy, Retinopathy, and Nephropathy indicates the max value is closer to the mean and not far enough to be measured in a separate quartile. Even though it still contains a single outlier on the high end. The breakdown of patients had 89 patients with no complications present, 16 with just neuropathy, and 8 who had both neuropathy and retinopathy, and the remainder tapers off from there.
 
-Creating documentation; and
+---
+- **Q3. How are heart problems linked to different blood sugar levels in people with diabetes, and what does this mean for staying healthy?:**
 
-Creating the presentation.
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Lewis-Hill/graph.png)
 
-Since this is a two-week project, make sure that you have completed at least half of your project by the end of the first week in order to stay on track.
+The histogram indicates there is a peak amplitude between age of diabetes diagnosis and the risk of microvascular disease. The data shows that early detection may mitigate the likelihood of complications. Most of the patients in the 50-70s range showed more macrovascular complications due to late diagnosis. Conversely, individuals diagnosed in their late 70s and on, demonstrate that a later in life diagnosis does not equate to an increase in macrovascular complications.
 
-Although you will divide the work among the group members, it’s essential to collaborate and communicate while working on different parts of the project. Be sure to check in with your teammates regularly and offer support.
+---
+- **Q4. How often do people with diabetes have low blood sugar, and what can we do to prevent it?:**
 
-Support and Resources
-Your instructional team will provide support during classes and office hours. You will also have access to learning assistants and tutors to help you with topics as needed. Make sure to take advantage of these resources as you collaborate with your group on this first project.
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/hypoglycemia.png)
 
-Requirements
-Software Version Control (10 points)
-Repository is created on GitHub (2 points).
+The bar chart depicting hypoglycemia incidence reveals a relatively low occurrence rate, with only 11.0% of the sampled patients experiencing hypoglycemic episodes. Factors contributing to an elevated risk of hypoglycemia include low BMI, inadequate dietary habits, insufficient physical activity, and the presence of concurrent complications such as microvascular and macrovascular diseases. It is noteworthy that this sample set deviates from most expected trends, potentially influenced by dietary habits or local cultural variations.
 
-Files are frequently committed to the repository (3 points).
+---
+- **Q5. Do blood sugar levels change over time in people with diabetes, and how can we use this knowledge to manage our health better?:**
 
-Commit messages include an appropriate level of detail (2 points).
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/lineplothba1c.png)
 
-Repository is organized and includes relevant information and project files (3 points).
+HbA1c is the measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.  Within this study, an observable sine curve pattern emerges in the median HbA1c levels among individuals managing diabetes. Initially, there is a peak followed by a consistent decline over the initial five years, then followed by a gradual rise over the subsequent five-year period. This sine wave continues in regular intervals with diminishing returns. The shading represents the variability of the data around the confidence intervals and  reliability of the estimated trend.
 
-Documentation (10 points)
-Code is well commented with concise, relevant notes (3 points).
+---
+- **Q6. How do the findings about age and cholesterol in people with diabetes match up with what we hear from doctors?:**
 
-GitHub README file includes a concise project overview (2 points).
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/scatteragecholesterol.png)
 
-GitHub README file includes detailed usage and installation instructions (2 points).
+Cholesterol constitutes a significant health factor impacting individuals with diabetes. The widely accepted median value is 200 mg/dL or 5.2 mmol/L. In this study you can see a mean of approximately 4.8 mmol/L across all patients which aligns with the standards of the National Library of Medicine.
 
-GitHub README includes either examples of the application, or the results and a summary of the analysis (3 points).
+---
+- **Q7. Do men and women face different risks for heart problems if they have diabetes, and what should we know about it?:**
+  
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/stackedbarchart.png)
 
-Analysis and Conclusion (30 points)
-Findings are strongly supported with numbers and visualizations (10 points).
+In this data set males were at higher risk of macrovascular complications when their HbA1c levels were at 61-70 and above 100 mmol/mol. The females were more at risk in the 51-60 range. Notably males were more likely than females to develop macrovascular complications.
+These discernible gender discrepancies emphasize the necessity for tailored approaches to diabetes management, acknowledging the distinct risk profiles and outcomes evident between males and females
 
-Write-up summarizes major findings and implications at a professional level (10 points).
 
-Each question in the project proposal is answered with precise descriptions and findings (5 points).
+## Challenges and Considerations
 
-Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis (5 points).
+In a dataset, challenges and considerations for data quality involve making sure the information is accurate and consistent.
 
-Visualizations (20 points)
-6–8 visualizations of data (at least two per question) (10 points).
+**Data Quality:** Managing data quality is a fundamental challenge in diabetes research. Issues such as missing data points and inconsistencies must be addressed through rigorous data preprocessing techniques. This includes data cleaning to remove inaccuracies, normalization to standardize data ranges, and feature selection to identify the most relevant variables for analysis [20].
 
-Clear and accurate labeling of images (5 points).
+**Data Privacy:** Ensuring the privacy of patient data in diabetes datasets like ShanghaiT1DM and ShanghaiT2DM is crucial. Strict protocols and ethical guidelines must be adhered to in order to protect sensitive information, which can include everything from patient identities to their medical histories [20].
 
-Visualizations supported with ample and precise explanation (5 points).
+## Limitations of Existing Datasets
 
-Presentation Requirements (30 points)
-Your presentation should cover the following:
+Existing datasets often come with limitations that can impact their usefulness for analysis and decision-making. One common limitation is the lack of completeness or accuracy in the data, which can arise due to errors in data collection, missing information, or outdated records. 
 
-An executive summary or overview of the project and project goals (5 points).
+**Impact of Dataset Size and Representativeness**
 
-An overview of the data collection, cleanup, and exploration processes (5 points).
+Our exploration of the ShanghaiT1DM and ShanghaiT2DM diabetes datasets has revealed a critical aspect regarding dataset size and representativeness. The  dataset illustrates the challenges posed by limited dataset scope. While it serves as a useful tool for demonstrating machine learning algorithms, its restricted coverage may not effectively represent the complex and varied nature of real-world diabetes cases [9].
 
-The approach that your group took in achieving the project goals (5 points).
+**Absence of a Control Dataset and Its Impact**
 
-Any additional questions that surfaced, what your group might research next if more time was available, or share a plan for future development (5 points).
+The absence of a control dataset in the context of our research highlights the need for larger, more diverse datasets to improve the robustness and applicability of research findings in practical settings. This limitation emphasizes the necessity for comprehensive and varied data sources to ensure that research findings are both scientifically valid and ethically sound.
 
-The results and conclusions of the application or analysis (5 points).
+**Absence of a Cost Dataset and Its Impact**
 
-Slides effectively demonstrate the project (3 points).
+The lack of a cost dataset can have significant consequences. It makes it harder to understand the economic aspects of managing diabetes, hindering efforts to assess affordability and accessibility of treatments. Additionally, without this data, identifying disparities in healthcare access among diabetic patients becomes challenging, potentially worsening inequalities in health outcomes. Therefore, having a cost dataset is essential for comprehensive analysis and informed decision-making in diabetes management.
 
-Slides are visually clean and professional (2 points).
+## Future Recommendations for Diabetes Management Research
 
-This project will be evaluated against the requirements and assigned a grade according to the following table:
+Drawing from the insights gained from the analysis of diabetes datasets, this document outlines future research recommendations that address areas not extensively covered in this study. These recommendations are supported by references to underscore their relevance and necessity.
 
-Grade	Points
-A (+/-)	90+
-B (+/-)	80–89
-C (+/-)	70–79
-D (+/-)	60–69
-F (+/-)	< 60
-Project Guidelines
-The following project guidelines focus on teamwork, your project proposal, data sources, and data cleanup and analysis.
+**Lifestyle Interventions**
+- **Recommendation**: Further research into the efficacy of specific dietary modifications and exercise regimens on both Type 1 and Type 2 diabetes management.
+   - Rationale: To identify and refine lifestyle-based interventions that can effectively complement medical treatments for diabetes, offering a holistic approach to disease management[1].
 
-Collaborating with Your Team
-Remember that these projects are a group effort. The experience of close collaboration will create better project outcomes and help you in your future careers. Specifically, you’ll learn collaborative workflows that will enable you to approach and solve complex problems. Working in groups allows you to work smart and dream big. Take advantage!
+**Psychosocial Factors**
+- **Recommendation**: Quantitative analysis of the impact of psychosocial factors (e.g., stress, social support, mental health) on diabetes management outcomes.
+   - **Rationale**: To understand how these factors affect diabetes control and patient well-being, informing care models that address both medical and psychosocial needs[1].
 
-Project Proposal
-Before you start writing any code, your group should outline the scope and purpose of your project. This will help provide direction and safeguard against scope creep (the tendency for projects to become more complex after work begins).
+**Precision Medicine Approaches**
+- **Recommendation**: Exploration of personalized diabetes management plans utilizing genomics and bioinformatics.
+   - **Rationale**: To optimize treatment efficacy and minimize adverse effects based on individual genetic profiles, biomarker variations, and lifestyle factors[1].
 
-The proposal is essentially a brief summary of your interests and intent. Be sure to include the following details:
+**Telemedicine and Remote Monitoring**
+- **Recommendation**: Evaluation of the effectiveness and patient satisfaction of telemedicine and remote monitoring technologies in diabetes care.
+   - **Rationale**: To identify best practices and improve patient-centered care models in the digital health technology sphere[1].  
+     
+**Health Equity and Access**
+- **Recommendation**: Research focused on mitigating barriers to diabetes care access, especially among underserved and minority populations.
+   - **Rationale**: To provide evidence-based recommendations that ensure advancements in diabetes care are universally accessible[1].
 
-The kind of data you’d like to work with and the field you’re interested in (finance, healthcare surveys, etc.);
+**Integration of Complementary Therapies**
+- **Recommendation**: Assessment of the roles of complementary therapies (e.g., acupuncture, nutritional supplements, mindfulness practices) in standard diabetes treatment protocols.
+   - **Rationale**: To understand the benefits and risks of these therapies, informing guidelines for their safe integration into diabetes care[1].
+     
+**Longitudinal Studies**
+- **Recommendation**: Conducting studies to track the progression of diabetes, management outcomes, and the long-term effects of interventions.
+   - **Rationale**: To gain insights into the natural history of diabetes and the efficacy of various management strategies over time[1].
 
-The questions you’ll ask of the data; and
+By addressing these areas, future research can significantly enhance the understanding and management of diabetes, contributing to improved patient outcomes and care practices.
 
-Possible source for the data.
 
-Use the following example for guidance:
+## Conclusion
 
-The aim of our project is to uncover patterns in credit card fraud. We’ll examine relationships between transaction types and location, purchase prices and times of day, purchase trends over the course of a year, and other related relationships derived from the data.
+In delving into the ShanghaiT1DM and ShanghaiT2DM datasets, we have undertaken an extensive exploration to discern the capacity of data visualization and correlation for elevating diabetes research. The employment of diverse visualization methods, including scatter plots, heat maps, and box plots, has yielded deep insights into the complex interrelations among various diabetes-related variables. These correlations, crucial for the progression of diabetes care, highlight the profound advantages of utilizing sophisticated data analysis tools in healthcare research. This meticulous examination of patterns has reaffirmed the critical role of data-driven decision-making in the medical sciences, emphasizing that advanced data visualization and correlation are essential for deriving significant insights into diabetes management.
 
-Finding Data
-Once your group has written a proposal, it’s time to start searching for data. We recommend the following curated sources of high-quality data:
+Looking ahead, it is crucial to harness these insights for devising innovative strategies for diabetes prevention and management. The integration of machine learning algorithms and artificial intelligence within our analytical frameworks promises to transform personalized healthcare delivery, enabling the customization of interventions to individual patient profiles. This move towards a data-driven healthcare approach not only promises to improve patient outcomes but also to create a more sustainable and efficient healthcare system.
 
-data.worldLinks to an external site.
+Therefore, we must persist in advancing the frontiers of data science and medical research, aiming for a future where precision in care is a reality for every individual, tailored to their specific needs at the right moment.
 
-KaggleLinks to an external site.
 
-Data.govLinks to an external site.
+## FAQs
 
-Awesome Public DatasetsLinks to an external site.
+1. What is the most straightforward method for visualizing a correlation between two variables?
+   - The simplest method to visualize a correlation between two variables is by using a scatterplot. This type of plot displays values for two numeric variables as dots on a graph, which helps in identifying any potential relationships between them without the need for calculating a correlation coefficient.
 
-IMPORTANT
-Whenever you use a dataset or create a new dataset based on other sources (such as existing datasets or information scraped from websites), make sure to use the following guidelines:
+2. How does data storytelling differ from a data dashboard?
+   - Data storytelling involves crafting a narrative around data to present it in a contextual and engaging manner. It employs various techniques to convey the story behind the data. On the other hand, a data dashboard is a tool that displays all relevant data in one place, allowing users to interpret and create their own narratives based on the comprehensive data provided.
 
-Check for copyright protections, and make sure that the way you plan to use this dataset is within the bounds of fair use.
+3. What are the limitations of using BMI to determine body composition?
+   - While Body Mass Index (BMI) is a commonly used metric for assessing body composition, it has several limitations. BMI, calculated based on height and weight, may not accurately reflect an individual's body composition, particularly in cases of high muscle mass or differences in bone density. Moreover, BMI categories do not differentiate between fat mass, muscle mass, and bone density, leading to potential misclassification of individuals' health status. Additionally, BMI does not account for variations in body fat distribution, such as central obesity, which is associated with higher health risks. Age, gender, and ethnic differences further complicate the interpretation of BMI, as its relationship with health outcomes may vary across different demographic groups. Reliance on BMI alone for assessing body composition can result in individuals being misclassified, potentially leading to delayed or inadequate interventions for those with unhealthy body compositions categorized as "normal weight" according to BMI standards. Therefore, while BMI is a useful tool at the population level, it should be interpreted cautiously and complemented with other measures, such as waist circumference and body fat percentage, for a more comprehensive evaluation of body composition and associated health risks.
 
-Document how you intend to use this dataset now and in the future. Find any licenses or terms of use associated with the dataset, and review them to confirm that your intended use is in compliance.
+## Glossary
 
-Investigate how the dataset was collected. Identify any indicators that the data was obtained from a source that the compilers were not authorized to access.
+-**Diabetes:** A chronic medical condition characterized by elevated levels of blood sugar, resulting from the body's inability to produce or effectively use insulin.  
+-**HbA1c:** Hemoglobin A1c, a measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.  
+-**BMI:** Body Mass Index, a measure of body fat based on an individual's weight and height, often used to assess the risk of developing various health conditions, including diabetes.  
+-**Microvascular Complications:** Diabetes-related complications affecting small blood vessels, such as those in the eyes, kidneys, and nerves.  
+-**Macrovascular Complications:** Diabetes-related complications affecting large blood vessels, often associated with cardiovascular diseases such as heart disease and stroke.  
+-**Statistical Analysis:** The process of collecting, cleaning, analyzing, and interpreting numerical data to uncover patterns, trends, and associations within a dataset.  
+-**Correlation Studies:** Research methods aimed at identifying relationships or associations between different variables or factors within a dataset.  
+-**Visualization Techniques:** Methods of presenting data and statistical findings in visual formats, such as charts, graphs, and diagrams, to facilitate understanding and communication of complex information.  
+-**Age Distribution:** The representation of the distribution of individuals within a population based on their age, often used to analyze age-related patterns and trends in health conditions.  
+-**Glucose:** A simple sugar (monosaccharide) that serves as the primary source of energy for the body's cells. It is a crucial molecule in metabolism and is found in many foods, particularly carbohydrates.  
+-**Blood Glucose:** The concentration of glucose present in the bloodstream. It is regulated by hormones such as insulin and glucagon and serves as a vital indicator of metabolic health.  
+-**Insulin:** A hormone produced by the pancreas that regulates blood glucose levels by promoting the uptake of glucose into cells and the storage of excess glucose as glycogen in the liver and muscles.  
+-**Gluconeogenesis:** The synthesis of glucose from non-carbohydrate sources, such as amino acids and glycerol, primarily in the liver, to maintain blood glucose levels during fasting or prolonged exercise.  
+-**Hyperglycemia:** A condition characterized by high blood glucose levels, often associated with diabetes mellitus or temporary stressors such as infection or injury.  
+-**Hypoglycemia:** A condition characterized by low blood glucose levels, which can lead to symptoms such as weakness, shakiness, and confusion. It is commonly associated with diabetes treatment involving insulin or certain medications.  
+-**Glycemic Index (GI):** A measure of how quickly a carbohydrate-containing food raises blood glucose levels after consumption compared to a reference food (usually glucose or white bread). Foods with a high GI cause a rapid spike in blood glucose, while those with a low GI produce a more gradual increase.  
 
-You’ll likely have to adjust your project plan as you explore the available data. That’s okay! This is all part of the process. Just make sure that everyone in the group is aligned on the project’s goals as you make changes.
+## Code Availability 
+The code for the analysis of the datasets and visualizations can be accessed in the GitHub repository, which is a JUPYTER notebook located within the code directory. The scripts can be executed with Python 3.6 and allows for reproducibility and code reuse.
 
-Make sure that your datasets are not too large for your personal computer. Big datasets are difficult to manage locally, so consider using data subsets or different datasets altogether.
+## References
 
-Data Cleanup and Analysis
-Now that you’ve picked your data, it’s time to tackle development and analysis. This is where the fun starts!
+[1] - https://www.researchgate.net/publication/367252616_Chinese_diabetes_datasets_for_data-driven_machine_learning
+[2] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6718069/
+[3] - https://www.kaggle.com/code/soheylbokaie/diabetes-data-analysis-insights-and-visualization
+[4] - https://digital.ahrq.gov/sites/default/files/docs/citation/r21hs023865-lee-final-report-2018.pdf
+[5] - https://www.researchgate.net/publication/374612719_Data_Visualization_of_Big_Data_for_Predictive_and_Descriptive_Analytics_for_Stroke_COVID-19_and_Diabetes
+[6] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6746071/
+[7] - https://www.atlantis-press.com/journals/hcis/125965543/view
+[8] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9849330/
+[9] - https://sites.google.com/view/uci-diabetes-datase-davgarl1j
+[10] - https://www.nature.com/articles/s41597-023-01940-7
+[11] - https://figshare.com/collections/Diabetes_Datasets_ShanghaiT1DM_and_ShanghaiT2DM/6310860
+[12] - https://ui.adsabs.harvard.edu/abs/2023NatSD..10...35Z/abstract
+[13] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6176528/
+[14] - https://diabetesjournals.org/care/article/46/7/1316/151548/Use-of-Real-World-Data-in-Population-Science-to
+[15] - https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0918-5
+[16] - https://www.nature.com/articles/s41597-023-02469-5
+[17] - https://www.linkedin.com/pulse/unveiling-insights-correlation-analysis-unleashing-power-bhaskaran-
+[18] - https://medium.com/@JaveriaSaif/correlation-in-data-analytics-75fec1f2147d
+[19] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6375260/
+[20] - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10544445/
 
-The analysis process can be broken into two broad phases: (1) exploration and cleanup, and (2) analysis.
 
-As you’ve learned, you’ll need to explore, clean, and reformat your data before you can begin answering your research questions. We recommend keeping track of these exploration and cleanup steps in a dedicated Jupyter notebook to stay organized and make it easier to present your work later.
-
-After you’ve cleaned your data and are ready to start crunching numbers, you should track your work in a Jupyter notebook dedicated specifically to analysis. We recommend focusing your analysis on multiple techniques, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time-series analysis. Don’t forget to include plots during both the exploration and analysis phases. Creating plots along the way can reveal insights and interesting trends in the data that you might not notice if you wait until you’re preparing for your presentation. Presentation requirements will be further explained in the next module.
-
-Presentation Guidelines
-This section lists the Project 1 presentation guidelines. Each group will prepare a formal, 10-minute presentation that covers the following points.
-
-An executive summary or overview of the project and project goals:
-
-Explain how the project relates to the industry you selected.
-An overview of the data collection, cleanup, and exploration processes:
-
-Describe the source of your data and why you chose it for your project.
-
-Describe the collection, exploration, and cleanup process.
-
-The approach that your group took to achieve the project goals:
-
-Include any relevant code or demonstrations of the application or analysis.
-
-Discuss any unanticipated insights or problems that arose and how you resolved them.
-
-The results/conclusions of the application or analysis:
-
-Include relevant images or examples to support your work.
-
-If the project goal was not achieved, discuss the issues and how you attempted to resolve them.
-
-Next steps:
-
-Briefly discuss potential next steps for the project.
-It’s crucial that you find time to rehearse before presentation day.
-
-On the day of your presentation, each member of your group is required to submit the URL of your GitHub repository for grading.
-
-Presentation Day
-Your group will have a total of 10 minutes—7 minutes for the presentation followed by a 3-minute question-and-answer session. It’s crucial that you find time to rehearse before presentation day.
-
-On the day of your presentation, each member of your group is required to submit the URL of your GitHub repository for grading.
-
-NOTE
-Projects are requirements for graduation. While you are allowed to miss up to two Challenge assignments and still earn your certificate, projects cannot be skipped.
