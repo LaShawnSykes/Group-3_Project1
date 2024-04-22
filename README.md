@@ -215,6 +215,9 @@ Therefore, we must persist in advancing the frontiers of data science and medica
 -**Age Distribution:** The representation of the distribution of individuals within a population based on their age, often used to analyze age-related patterns and trends in health conditions.
 -**Statistical Tests:** Formal procedures used to make inferences about relationships or differences within a dataset, such as t-tests, ANOVA, and chi-square tests, to assess the significance of findings.
 
+## Code availability 
+The code for the analysis of the datasets and visualizations can be accessed in the GitHub repository, which is a JUPYTER notebook located within the code directory. The scripts can be executed with Python 3.6 and allows for reproducibility and code reuse.
+
 ## References
 
 [1] - https://www.researchgate.net/publication/367252616_Chinese_diabetes_datasets_for_data-driven_machine_learning
