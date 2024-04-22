@@ -82,13 +82,30 @@ The summary sheets summarize the clinical characteristics, laboratory measuremen
 
 From a data analysis perspective, these visualization techniques not only improve understanding but also equip professionals with the skills necessary for handling complex data analyses in their careers. Integrating practical data manipulation exercises helps bridge the gap between theoretical knowledge and real-world application, contributing to more effective diabetes management and overall health outcomes.
 
----
-![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidistgender.png)
+### Understanding Health Factors in Diabetes
+- **Q. Do blood sugar levels change over time in people with diabetes, and how can we use this knowledge to manage our health better?:**
 
-It was observed that there was a relatively equal proportion of male and female participants overall. However, a detailed analysis revealed a significant difference of 29.89% between the genders in terms of their representation within the optimal weight range. This finding underscores the significance of considering gender-specific variations in body composition and associated health outcomes.
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/lineplothba1c.png)
+
+HbA1c is the measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.  Within this study, an observable sine curve pattern emerges in the median HbA1c levels among individuals managing diabetes. Initially, there is a peak followed by a consistent decline over the initial five years, then followed by a gradual rise over the subsequent five-year period. This sine wave continues in regular intervals with diminishing returns. The shading represents the variability of the data around the confidence intervals and  reliability of the estimated trend.
 
 ---
-- **Q2. Can we find any clear connections between blood sugar levels and common diabetes-related issues like eye, nerve, or kidney problems?:**
+- **Q. How do the findings about age and cholesterol in people with diabetes match up with what we hear from doctors?:**
+
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/scatteragecholesterol.png)
+
+Cholesterol constitutes a significant health factor impacting individuals with diabetes. The widely accepted median value is 200 mg/dL or 5.2 mmol/L. In this study you can see a mean of approximately 4.8 mmol/L across all patients which aligns with the standards of the National Library of Medicine.
+
+---
+- **Q. How does weight vary among different groups of people, and what does this teach us about staying healthy?:** 
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidist.png)
+
+The analysis of the sample set revealed that most patients fell within the body mass index range of 18.5 - 25 kg/m², in relation to the second quartile. This range is identified by the Center for Disease Control as representing a healthy or optimal weight status for the general population. 
+
+
+### Related Health Connections
+---
+- **Q. Can we find any clear connections between blood sugar levels and common diabetes-related issues like eye, nerve, or kidney problems?:**
   
 ![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/bmidmc.png)
 
@@ -97,47 +114,34 @@ There is an almost even distribution of macrovascular complications across the e
 ---
 ![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/boxplotfastingplasma.png)
 
-
 Overall elevated FPG levels are linked to a higher risk of chronic microvascular complications. With a whisker not appearing on top of Neuropathy, Retinopathy, and Nephropathy indicates the max value is closer to the mean and not far enough to be measured in a separate quartile. Even though it still contains a single outlier on the high end. The breakdown of patients had 89 patients with no complications present, 16 with just neuropathy, and 8 who had both neuropathy and retinopathy, and the remainder tapers off from there.
 
 ---
-- **Q3. How are heart problems linked to different blood sugar levels in people with diabetes, and what does this mean for staying healthy?:**
 
-![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Lewis-Hill/graph.png)
-
-The histogram indicates there is a peak amplitude between age of diabetes diagnosis and the risk of microvascular disease. The data shows that early detection may mitigate the likelihood of complications. Most of the patients in the 50-70s range showed more macrovascular complications due to late diagnosis. Conversely, individuals diagnosed in their late 70s and on, demonstrate that a later in life diagnosis does not equate to an increase in macrovascular complications.
-
----
-- **Q4. How often do people with diabetes have low blood sugar, and what can we do to prevent it?:**
+- **Q. How often do people with diabetes have low blood sugar, and what can we do to prevent it?:**
 
 ![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/hypoglycemia.png)
 
 The bar chart depicting hypoglycemia incidence reveals a relatively low occurrence rate, with only 11.0% of the sampled patients experiencing hypoglycemic episodes. Factors contributing to an elevated risk of hypoglycemia include low BMI, inadequate dietary habits, insufficient physical activity, and the presence of concurrent complications such as microvascular and macrovascular diseases. It is noteworthy that this sample set deviates from most expected trends, potentially influenced by dietary habits or local cultural variations.
 
+
+### Gender, Heart Risks, and Blood Sugar
 ---
-- **Q5. Do blood sugar levels change over time in people with diabetes, and how can we use this knowledge to manage our health better?:**
-
-![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/lineplothba1c.png)
-
-HbA1c is the measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.  Within this study, an observable sine curve pattern emerges in the median HbA1c levels among individuals managing diabetes. Initially, there is a peak followed by a consistent decline over the initial five years, then followed by a gradual rise over the subsequent five-year period. This sine wave continues in regular intervals with diminishing returns. The shading represents the variability of the data around the confidence intervals and  reliability of the estimated trend.
-
----
-- **Q6. How do the findings about age and cholesterol in people with diabetes match up with what we hear from doctors?:**
-
-![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/scatteragecholesterol.png)
-
-Cholesterol constitutes a significant health factor impacting individuals with diabetes. The widely accepted median value is 200 mg/dL or 5.2 mmol/L. In this study you can see a mean of approximately 4.8 mmol/L across all patients which aligns with the standards of the National Library of Medicine.
-
----
-- **Q7. Do men and women face different risks for heart problems if they have diabetes, and what should we know about it?:**
+- **Q. Do men and women face different risks for heart problems if they have diabetes, and what should we know about it?:**
   
 ![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Aaron-Cranor/PNGs/stackedbarchart.png)
 
 In this data set males were at higher risk of macrovascular complications when their HbA1c levels were at 61-70 and above 100 mmol/mol. The females were more at risk in the 51-60 range. Notably males were more likely than females to develop macrovascular complications.
 These discernible gender discrepancies emphasize the necessity for tailored approaches to diabetes management, acknowledging the distinct risk profiles and outcomes evident between males and females
 
+--- 
+- **Q. How are heart problems linked to different blood sugar levels in people with diabetes, and what does this mean for staying healthy?:**
 
-## Challenges and Considerations
+![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/Lewis-Hill/graph.png)
+
+The histogram indicates there is a peak amplitude between age of diabetes diagnosis and the risk of microvascular disease. The data shows that early detection may mitigate the likelihood of complications. Most of the patients in the 50-70s range showed more macrovascular complications due to late diagnosis. Conversely, individuals diagnosed in their late 70s and on, demonstrate that a later in life diagnosis does not equate to an increase in macrovascular complications.
+
+### Challenges and Considerations
 
 In a dataset, challenges and considerations for data quality involve making sure the information is accurate and consistent.
 
