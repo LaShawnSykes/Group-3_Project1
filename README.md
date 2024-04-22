@@ -4,6 +4,25 @@
 
 This study delves into visual analysis of the ShanghaiT1DM and ShanghaiT2DM datasets, aiming to unveil correlations and insights into various health factors among individuals with diabetes. By addressing key questions regarding health factors, diabetes-related complications, and gender-specific risks, the research endeavors to provide comprehensive visual insights crucial for improved diabetes management and overall health outcomes. The datasets, publicly accessible and unique in capturing real-life data from patients diagnosed with Type 1 and Type 2 diabetes mellitus, offer a rich resource for diabetes research. Detailed compositions of the datasets, encompassing clinical characteristics, laboratory measurements, medications, and dietary information, facilitate robust data analysis. Leveraging data visualization techniques, the study not only enhances understanding but also equips professionals with the skills necessary for handling complex data analyses in diabetes management, contributing to better healthcare practices and outcomes.
 
+## Project Team
+**Project Manager & Data Engineer & Documentation Lead & README.md Lead: La Shawn Sykes**
+
+-Responsibilities: Leads the project, manages the team, and handles the technical side of collecting, cleaning, and storing data.  Uses advanced techniques to dive deep into data. Also prepares project documents and presentations.  
+-Skills: Good at managing people and projects, research datasets and project information, perform data cleaning and data analysis, knows data processing, create sample python code for visualization, good at explaining technical information in writing, pays attention to detail and knows Markdown.  
+-Quote:"Within the data lies the story of our endeavors, waiting to be deciphered with curiosity, clarity, and conviction."  
+
+**Visualization Specialist & Data Analyst: Aaron Cranor**
+
+-Responsibilities: Finds patterns in data, makes graphs and charts to show findings.  
+-Skills: Knows statistics and programming, good at making data easy to understand visually, provide data insights.    
+-Quote: "In the symphony of data, visualization is the conductor, orchestrating insights that resonate with clarity and depth.  
+
+**README.md Support & Team Member: Lewis Hill**
+
+-Responsibilities: Keeps the README.md file updated with the latest project information.  
+-Skills: Pays attention to detail and knows Markdown, works with others to achieve a goal, communicate, collaborate, and contribute to help the team succeed.  
+-Quote: "Crafting clarity in code, support ensures every document shines bright, guiding the way for all who journey through our digital landscape."  
+
 ![Visualization](https://github.com/LaShawnSykes/Group-3_Project1/blob/main/README_image.png)
 
 
@@ -147,35 +166,30 @@ The lack of a cost dataset can have significant consequences. It makes it harder
 Drawing from the insights gained from the analysis of diabetes datasets, this document outlines future research recommendations that address areas not extensively covered in this study. These recommendations are supported by references to underscore their relevance and necessity.
 
 **Lifestyle Interventions**
-
 - **Recommendation**: Further research into the efficacy of specific dietary modifications and exercise regimens on both Type 1 and Type 2 diabetes management.
    - Rationale: To identify and refine lifestyle-based interventions that can effectively complement medical treatments for diabetes, offering a holistic approach to disease management[1].
 
 **Psychosocial Factors**
-
 - **Recommendation**: Quantitative analysis of the impact of psychosocial factors (e.g., stress, social support, mental health) on diabetes management outcomes.
    - **Rationale**: To understand how these factors affect diabetes control and patient well-being, informing care models that address both medical and psychosocial needs[1].
 
 **Precision Medicine Approaches**
-
 - **Recommendation**: Exploration of personalized diabetes management plans utilizing genomics and bioinformatics.
--    **Rationale**: To optimize treatment efficacy and minimize adverse effects based on individual genetic profiles, biomarker variations, and lifestyle factors[1].
+   - **Rationale**: To optimize treatment efficacy and minimize adverse effects based on individual genetic profiles, biomarker variations, and lifestyle factors[1].
 
 **Telemedicine and Remote Monitoring**
-
 - **Recommendation**: Evaluation of the effectiveness and patient satisfaction of telemedicine and remote monitoring technologies in diabetes care.
-   - **Rationale**: To identify best practices and improve patient-centered care models in the digital health technology sphere[1].
+   - **Rationale**: To identify best practices and improve patient-centered care models in the digital health technology sphere[1].  
+     
 **Health Equity and Access**
-
 - **Recommendation**: Research focused on mitigating barriers to diabetes care access, especially among underserved and minority populations.
    - **Rationale**: To provide evidence-based recommendations that ensure advancements in diabetes care are universally accessible[1].
 
 **Integration of Complementary Therapies**
-
 - **Recommendation**: Assessment of the roles of complementary therapies (e.g., acupuncture, nutritional supplements, mindfulness practices) in standard diabetes treatment protocols.
    - **Rationale**: To understand the benefits and risks of these therapies, informing guidelines for their safe integration into diabetes care[1].
+     
 **Longitudinal Studies**
-
 - **Recommendation**: Conducting studies to track the progression of diabetes, management outcomes, and the long-term effects of interventions.
    - **Rationale**: To gain insights into the natural history of diabetes and the efficacy of various management strategies over time[1].
 
@@ -204,16 +218,22 @@ Therefore, we must persist in advancing the frontiers of data science and medica
 
 ## Glossary
 
--**Diabetes:** A chronic medical condition characterized by elevated levels of blood sugar, resulting from the body's inability to produce or effectively use insulin.
--**HbA1c:** Hemoglobin A1c, a measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.
--**BMI:** Body Mass Index, a measure of body fat based on an individual's weight and height, often used to assess the risk of developing various health conditions, including diabetes.
--**Microvascular Complications:** Diabetes-related complications affecting small blood vessels, such as those in the eyes, kidneys, and nerves.
--**Macrovascular Complications:** Diabetes-related complications affecting large blood vessels, often associated with cardiovascular diseases such as heart disease and stroke.
--**Statistical Analysis:** The process of collecting, cleaning, analyzing, and interpreting numerical data to uncover patterns, trends, and associations within a dataset.
--**Correlation Studies:** Research methods aimed at identifying relationships or associations between different variables or factors within a dataset.
--**Visualization Techniques:** Methods of presenting data and statistical findings in visual formats, such as charts, graphs, and diagrams, to facilitate understanding and communication of complex information.
--**Age Distribution:** The representation of the distribution of individuals within a population based on their age, often used to analyze age-related patterns and trends in health conditions.
--**Statistical Tests:** Formal procedures used to make inferences about relationships or differences within a dataset, such as t-tests, ANOVA, and chi-square tests, to assess the significance of findings.
+-**Diabetes:** A chronic medical condition characterized by elevated levels of blood sugar, resulting from the body's inability to produce or effectively use insulin.  
+-**HbA1c:** Hemoglobin A1c, a measure of average blood glucose levels over a period of time, commonly used to diagnose and monitor diabetes.  
+-**BMI:** Body Mass Index, a measure of body fat based on an individual's weight and height, often used to assess the risk of developing various health conditions, including diabetes.  
+-**Microvascular Complications:** Diabetes-related complications affecting small blood vessels, such as those in the eyes, kidneys, and nerves.  
+-**Macrovascular Complications:** Diabetes-related complications affecting large blood vessels, often associated with cardiovascular diseases such as heart disease and stroke.  
+-**Statistical Analysis:** The process of collecting, cleaning, analyzing, and interpreting numerical data to uncover patterns, trends, and associations within a dataset.  
+-**Correlation Studies:** Research methods aimed at identifying relationships or associations between different variables or factors within a dataset.  
+-**Visualization Techniques:** Methods of presenting data and statistical findings in visual formats, such as charts, graphs, and diagrams, to facilitate understanding and communication of complex information.  
+-**Age Distribution:** The representation of the distribution of individuals within a population based on their age, often used to analyze age-related patterns and trends in health conditions.  
+-**Glucose:** A simple sugar (monosaccharide) that serves as the primary source of energy for the body's cells. It is a crucial molecule in metabolism and is found in many foods, particularly carbohydrates.  
+-**Blood Glucose:** The concentration of glucose present in the bloodstream. It is regulated by hormones such as insulin and glucagon and serves as a vital indicator of metabolic health.  
+-**Insulin:** A hormone produced by the pancreas that regulates blood glucose levels by promoting the uptake of glucose into cells and the storage of excess glucose as glycogen in the liver and muscles.  
+-**Gluconeogenesis:** The synthesis of glucose from non-carbohydrate sources, such as amino acids and glycerol, primarily in the liver, to maintain blood glucose levels during fasting or prolonged exercise.  
+-**Hyperglycemia:** A condition characterized by high blood glucose levels, often associated with diabetes mellitus or temporary stressors such as infection or injury.  
+-**Hypoglycemia:** A condition characterized by low blood glucose levels, which can lead to symptoms such as weakness, shakiness, and confusion. It is commonly associated with diabetes treatment involving insulin or certain medications.  
+-**Glycemic Index (GI):** A measure of how quickly a carbohydrate-containing food raises blood glucose levels after consumption compared to a reference food (usually glucose or white bread). Foods with a high GI cause a rapid spike in blood glucose, while those with a low GI produce a more gradual increase.  
 
 ## Code availability 
 The code for the analysis of the datasets and visualizations can be accessed in the GitHub repository, which is a JUPYTER notebook located within the code directory. The scripts can be executed with Python 3.6 and allows for reproducibility and code reuse.
